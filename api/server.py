@@ -8,9 +8,12 @@ from dotenv import load_dotenv
 from openai import OpenAI
 
 load_dotenv()
-api_key = os.getenv("OPENAI_API_KEY")
-if not api_key:
-    raise RuntimeError("OPENAI_API_KEY non impostata (env)")
+api_key = (os.getenv("OPENAI_API_KEY") or "").strip()
+web_origin = (os.getenv("WEB_ORIGIN") or "").strip()
+
+# 🔎 Log non sensibili per capire cosa vede Render (non stampiamo la chiave)
+print(f"[BOOT] Has OPENAI_API_KEY? {'yes' if bool(api_key) else 'no'}")
+print(f"[BOOT] WEB_ORIGIN: {web_origin or '(empty)'}")
 
 client = OpenAI(api_key=api_key)
 
@@ -31,7 +34,11 @@ class GenerateBody(BaseModel):
 
 @app.get("/api/ping")
 def ping():
-    return {"ok": True}
+    return {
+        "ok": True,
+        "has_key": bool(os.getenv("OPENAI_API_KEY")),
+        "web_origin": os.getenv("WEB_ORIGIN") or ""
+    }
 
 def data_url_to_bytes(data_url: str) -> bytes:
     try:
