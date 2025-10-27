@@ -1,0 +1,93 @@
+.welcome-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 16px;
+}
+
+.welcome-content {
+  width: 100%;
+  max-width: min(90vw, 52%);
+  height: 100%;
+  max-height: min(100vw ,38%);
+}
+
+.welcome-card {
+  background-color: #C5DDE8;
+  border-radius: clamp(8px, 2vw, 12px);
+  padding: clamp(24px, 4vw, 40px);
+  text-align: center;
+}
+
+.welcome-title {
+  margin-bottom: clamp(12px, 2vh, 20px);
+  font-size: clamp(20px, 30px, 40px);
+  color: #232F66;
+  text-align: center;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.welcome-description {
+  font-size: clamp(12px, 20px, 30px);
+  margin-bottom: 8px;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.welcome-description:last-of-type {
+  margin-bottom: clamp(16px, 3vh, 28px);
+}
+
+.welcome-button {
+  background-color: #2952A3;
+  color: white;
+  padding: clamp(8px, 1.5vh, 12px) clamp(24px, 4vw, 40px);
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: clamp(14px, 2vw, 18px);
+  font-family: Inter
+}
+
+.welcome-button:hover {
+  background-color: #1E3A5F;
+}
+
+@media (max-width: 300px) {
+  .welcome-page {
+    padding: 0%;
+  }
+  
+  .welcome-card {
+    padding: 20px;
+  }
+}
+
+@media (max-height: 600px) {
+  .welcome-card {
+    padding: 0px;
+  }
+  
+  .welcome-title {
+    margin-bottom: 8px;
+  }
+  
+  .welcome-description {
+    margin-bottom: 4px;
+  }
+  
+  .welcome-description:last-of-type {
+    margin-bottom: 12px;
+  }
+}

@@ -1,0 +1,13 @@
+# node / vite
+web/node_modules
+web/dist
+
+# python
+api/.venv
+api/__pycache__
+
+# env
+*.env
+api/.env
+web/.env.local
+web/.env.production
