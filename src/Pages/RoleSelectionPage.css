@@ -119,14 +119,14 @@
   background-color: white;
   border-radius: clamp(6px, 1vw, 8px);
   padding: 0px;
-  margin-bottom: clamp(12px, 1.5vh, 16px);
+  margin-bottom: -18px;
   aspect-ratio: 16 / 9;
   display: flex;
   flex: 0 0 auto;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  width: 100%;
+  width: 90%;
   position: relative;
 }
 
@@ -153,7 +153,7 @@
 
 .role-card-description {
   color: white;
-  font-size: clamp(11px, 16px, 20px);
+  font-size: clamp(11px, 13px, 15px);
   line-height: 1.5;
   opacity: 0.9;
   font-family:  Inter;
