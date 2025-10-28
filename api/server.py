@@ -22,7 +22,7 @@ app = FastAPI()
 # CORS: in dev consenti Vite; in prod imposta il dominio del frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[os.getenv("WEB_ORIGIN", "http://localhost:5173")],
+    allow_origins=[os.getenv("WEB_ORIGIN", "https://imagegenhartu-front.onrender.com/")],
     allow_credentials=True,
     allow_methods=["POST", "GET", "OPTIONS"],
     allow_headers=["*"],
