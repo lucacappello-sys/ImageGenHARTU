@@ -12,7 +12,7 @@
   width: 100%;
   height: 3%;
   background: #EAEFF6;
-  padding: clamp(20px, 3vh, 32px) 0;
+  padding: clamp(18px, 4vh, 32px) 0;
   flex-shrink: 0;
 }
 
@@ -70,7 +70,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 90%;
   flex: 1;
   min-height: 0;
 }
@@ -194,7 +194,7 @@
 /* Footer Container - Full Width */
 .take-picture-footer-container {
   width: 100%;
-  height: 3%;
+  height: 40px;
   background-color: #F3F4F6;
   padding: clamp(20px, 3vh, 32px) 0;
   flex-shrink: 0;

@@ -9,10 +9,9 @@
 }
 
 .welcome-content {
-  width: 100%;
-  max-width: min(90%, 52%);
-  height: 100%;
-  max-height: min(100% ,38%);
+  width: 60%;
+  height: 54%;
+  
 }
 
 .welcome-card {

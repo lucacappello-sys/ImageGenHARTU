@@ -10,7 +10,7 @@
 /* Header Container - Full Width */
 .role-selection-header-container {
   width: 100%;
-  height: 3%;
+  height: 30px;
   background: #EAEFF6;
   padding: clamp(20px, 3vh, 32px) 0;
   flex-shrink: 0;
@@ -103,7 +103,7 @@
 }
 
 .role-card:hover {
-  transform: scale(1.10);
+  transform: scale(1.05);
 }
 /* 
 @media (min-width: 1024px) {
@@ -148,7 +148,7 @@
 .role-card-title {
   color: white;
   margin-bottom: clamp(8px, 1vh, 12px);
-  font-size: clamp(14px, 28px, 32px);
+  font-size: clamp(14px, 26px, 32px);
   font-family:  Inter
 }
 
@@ -172,7 +172,7 @@
 /* Footer Container - Full Width */
 .role-selection-footer-container {
   width: 100%;
-  height: 3%;
+  height: 30px;
   background: #EAEFF6;
   padding: clamp(20px, 3vh, 32px) 0;
   flex-shrink: 0;
@@ -181,7 +181,7 @@
 .role-selection-footer-content {
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 clamp(16px, 3vw, 40px);
+  padding: 0 clamp(16px, 5vh, 40px);
   display: flex;
   align-items: center;
   justify-content: space-between;
