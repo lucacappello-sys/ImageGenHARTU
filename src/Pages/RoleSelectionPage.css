@@ -10,6 +10,7 @@
 /* Header Container - Full Width */
 .role-selection-header-container {
   width: 100%;
+  height: 3%;
   background: #EAEFF6;
   padding: clamp(20px, 3vh, 32px) 0;
   flex-shrink: 0;
@@ -171,6 +172,7 @@
 /* Footer Container - Full Width */
 .role-selection-footer-container {
   width: 100%;
+  height: 3%;
   background: #EAEFF6;
   padding: clamp(20px, 3vh, 32px) 0;
   flex-shrink: 0;
