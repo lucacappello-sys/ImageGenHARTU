@@ -69,7 +69,7 @@
  
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .role-cards-grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -79,7 +79,7 @@
   .role-cards-grid {
     gap: 16px;
   }
-}
+} */
 
 /* Prevent horizontal overflow */
 .role-cards-grid > * {
@@ -102,14 +102,14 @@
 }
 
 .role-card:hover {
-  transform: scale(1.02);
+  transform: scale(1.10);
 }
-
+/* 
 @media (min-width: 1024px) {
   .role-card:hover {
     transform: scale(1.05);
   }
-}
+} */
 
 .role-card.selected {
   box-shadow:  0 25px 50px -5px rgba(0, 0, 0, 0.368);
@@ -153,20 +153,20 @@
 
 .role-card-description {
   color: white;
-  font-size: clamp(11px, 13px, 15px);
-  line-height: 1.5;
+  font-size: clamp(11px, 15px, 17px);
+  line-height: 1;
   opacity: 0.9;
   font-family:  Inter;
   flex: 1 1 auto;
   
 }
 
-@media (max-height: 700px) {
+/* @media (max-height: 700px) {
   .role-card-description {
     font-size: clamp(10px, 1.2vw, 13px);
     line-height: 1.4;
   }
-}
+} */
 
 /* Footer Container - Full Width */
 .role-selection-footer-container {

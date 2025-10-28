@@ -65,16 +65,16 @@
   border-radius: clamp(16px, 2vw, 24px);
   padding: clamp(24px, 3vw, 40px);
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1.65fr 1fr 1fr;
   gap: clamp(20px, 3vh, 32px);
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .results-card {
     grid-template-columns: 1.65fr 1fr 1fr;
   }
-}
+} */
 
 /* Image Section */
 .results-image-section {
@@ -232,7 +232,7 @@
 }
 
 /* Mobile Adjustments */
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .results-card {
     gap: 16px;
     padding: 20px;
@@ -266,4 +266,4 @@
   .results-item-label {
     font-size: 11px;
   }
-}
+} */
