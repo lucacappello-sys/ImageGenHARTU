@@ -100,6 +100,7 @@
   overflow: hidden;
   align-items: center;
   width: 100%;
+  height: 100%;
 }
 
 .role-card:hover {
@@ -158,7 +159,6 @@
   line-height: 1;
   opacity: 0.9;
   font-family:  Inter;
-  flex: 1 1 auto;
   
 }
 
