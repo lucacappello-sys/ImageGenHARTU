@@ -19,10 +19,12 @@ client = OpenAI(api_key=api_key)
 
 app = FastAPI()
 
+allowed_origins = [os.getenv("WEB_ORIGIN")] if os.getenv("WEB_ORIGIN") else ["http://localhost:5173"]
+
 # CORS: in dev consenti Vite; in prod imposta il dominio del frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[os.getenv("WEB_ORIGIN", "https://imagegenhartu-front.onrender.com/")],
+    allow_origins=allowed_origins,
     allow_credentials=True,
     allow_methods=["POST", "GET", "OPTIONS"],
     allow_headers=["*"],

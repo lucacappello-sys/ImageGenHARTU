@@ -124,8 +124,10 @@ export default function TakePicturePage({ rolePrompt, onBack, onContinue }) {
     setIsSending(true);
     setSendError('');
     try {
-      const base = import.meta.env.VITE_API_BASE || ''; // '' in dev -> usa proxy
-      const { data } = await axios.post(`${base}/api/generate`, {
+      const base = import.meta.env.VITE_API_BASE || ''; 
+      const cleanBase = base.endsWith('/') ? base.slice(0, -1) : base;
+
+      const { data } = await axios.post(`${cleanBase}/api/generate`, {
         prompt: rolePrompt || '',
         imageBase64: capturedImage,
       });
