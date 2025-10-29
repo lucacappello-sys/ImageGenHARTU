@@ -195,9 +195,8 @@
 /* Footer Container - Full Width */
 .take-picture-footer-container {
   width: 100%;
-  height: 40px;
   background-color: #F3F4F6;
-  padding: clamp(20px, 3vh, 32px) 0;
+  padding: 10px;
   flex-shrink: 0;
 }
 
