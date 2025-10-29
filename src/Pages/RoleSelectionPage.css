@@ -173,7 +173,7 @@
 /* Footer Container - Full Width */
 .role-selection-footer-container {
   width: 100%;
-  min-height: 5%;
+  min-height: 10%;
   background: #EAEFF6;
   flex-shrink: 0;
 }
