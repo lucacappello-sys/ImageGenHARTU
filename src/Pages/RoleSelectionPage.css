@@ -173,7 +173,7 @@
 /* Footer Container - Full Width */
 .role-selection-footer-container {
   width: 100%;
-  height: 30px;
+  
   background: #EAEFF6;
   flex-shrink: 0;
 }
