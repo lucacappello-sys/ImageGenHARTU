@@ -63,7 +63,7 @@ export default function ResultsPage({ selectedRole, capturedImage, generatedImag
   };
 
   const data = roleData[selectedRole?.title] || roleData['SMART LINE OPERATOR'];
-  const roleColor = selectedRole?.color || '#3B82F6';
+  const roleColor = selectedRole?.color;
 
   return (
     <div className="results-page-container">
